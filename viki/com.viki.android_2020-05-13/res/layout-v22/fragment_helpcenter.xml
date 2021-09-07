@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.viki.shared.views.GradientScrimView android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/searchContainer" android:layout_alignParentTop="true" app:baseColor="?android:windowBackground" />
+    <FrameLayout android:id="@id/searchContainer" android:paddingTop="@dimen/spacing_extra_large" android:paddingBottom="@dimen/spacing_extra_large" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="@dimen/spacing_large" android:paddingEnd="@dimen/spacing_large">
+        <EditText android:textAppearance="@style/TextAppearance.Viki.Plain.L" android:ellipsize="end" android:id="@id/etSearch" android:background="@drawable/search_field_background" android:layout_width="fill_parent" android:layout_height="42.0dip" android:hint="@string/helpcenter_search_hint" android:maxLines="1" android:lines="1" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="@dimen/spacing_large" android:paddingEnd="52.0dip" android:importantForAutofill="no" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/ivSearch" android:background="?selectableItemBackground" android:layout_width="52.0dip" android:layout_height="fill_parent" android:paddingStart="@dimen/spacing_large" android:paddingEnd="@dimen/spacing_large" app:srcCompat="@drawable/ic_search" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:paddingBottom="@dimen/list_bottom_padding" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/searchContainer" />
+    <ViewStub android:id="@id/errorStub" android:layout="@layout/widget_placeholder" android:inflatedId="@id/errorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/pbLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+</RelativeLayout>

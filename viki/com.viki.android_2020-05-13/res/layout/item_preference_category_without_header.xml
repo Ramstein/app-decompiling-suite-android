@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/VikiTheme.TextAppearance.Title" android:textStyle="bold" android:textColor="@color/contents_tertiary" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:paddingStart="?listPreferredItemPaddingLeft" android:paddingEnd="?listPreferredItemPaddingRight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

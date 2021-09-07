@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="199.0dip" android:width="328.39844dip" android:viewportWidth="656.7" android:viewportHeight="398.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0 0H656.7V398H0V0Z" />
+        <group android:pivotX="328.35" android:pivotY="199.0" android:scaleX="2.0" android:scaleY="200.0" android:translateX="0.0" android:translateY="-49.5">
+            <path android:fillColor="@drawable/$gradient_billboard__0" android:pathData="M0 0V398H656.7V0" />
+        </group>
+    </group>
+</vector>

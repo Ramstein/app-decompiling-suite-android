@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_below="@id/toolbar" android:layout_marginStart="@dimen/margin_bottom" android:layout_marginEnd="@dimen/margin_bottom">
+        <TextView android:textSize="@dimen/text_size_tag" android:id="@id/txt_term_use" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/_13_year_old_terms_use" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/txtBirthdayLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/email_margin_top" app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/editBirthday" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox android:textColor="@color/contents_tertiary" android:id="@id/chbTermUse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_default" android:text="@string/terms_and_privacy" android:paddingStart="@dimen/padding_default" />
+        <CheckBox android:textColor="@color/contents_tertiary" android:id="@id/chbNotification" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_default" android:text="@string/keep_me_posted" android:paddingStart="@dimen/padding_default" />
+        <Button android:id="@id/btnConfirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/actionbar_icon_size" android:text="@string/confirmation" />
+    </LinearLayout>
+    <Button android:gravity="center" android:id="@id/txtLogOut" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/log_out" android:layout_alignParentBottom="true" style="@style/VikiTheme.Button.TextButton" />
+    <View android:id="@id/divider" android:background="@color/surface_3" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_above="@id/txtLogOut" />
+</RelativeLayout>

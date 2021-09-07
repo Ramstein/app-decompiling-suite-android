@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Preference_TextAppearanceMaterialSubhead" android:id="@id/textview_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" android:layout_centerVertical="true" android:paddingEnd="?android:listPreferredItemPaddingRight" android:layout_marginEnd="?android:listPreferredItemPaddingRight" android:layout_alignParentEnd="true" />
+    <CheckedTextView android:textAppearance="@style/Preference_TextAppearanceMaterialSubhead" android:gravity="center_vertical" android:id="@id/textview_name" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall" android:checkMark="@null" android:drawablePadding="?android:listPreferredItemPaddingLeft" android:drawableStart="?android:listChoiceIndicatorSingle" android:paddingStart="?android:listPreferredItemPaddingLeft" android:paddingEnd="?android:listPreferredItemPaddingRight" android:layout_toStartOf="@id/textview_percentage" android:layout_alignParentStart="true" />
+</RelativeLayout>

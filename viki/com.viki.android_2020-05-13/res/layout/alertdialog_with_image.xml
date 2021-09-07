@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/keyline_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/dialogImage" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="@dimen/keyline_8" />
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Emphasis.L" android:textColor="@color/contents_primary" android:id="@id/dialogTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/keyline_8" />
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.M" android:textColor="@color/contents_secondary" android:id="@id/dialogMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/keyline_8" />
+</LinearLayout>

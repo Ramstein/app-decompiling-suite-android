@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/container" android:paddingTop="@dimen/default_side_margin" android:paddingBottom="@dimen/default_side_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/default_side_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.apmem.tools.layouts.FlowLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_side_margin">
+        <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Explore" android:layout_gravity="center_vertical" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+        <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Explore.Tag" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/textview_count" android:background="@drawable/circle_material_gray" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:includeFontPadding="false" android:layout_marginStart="@dimen/default_margin" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/dot" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/circle_accent" android:layout_marginStart="@dimen/default_margin" />
+    </org.apmem.tools.layouts.FlowLayout>
+    <View android:id="@id/indicator" android:background="@color/vikiBlue_var2" android:layout_width="2.0dip" android:layout_height="16.0dip" android:layout_centerVertical="true" />
+</RelativeLayout>

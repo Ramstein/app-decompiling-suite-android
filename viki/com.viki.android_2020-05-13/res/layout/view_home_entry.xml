@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/keyline_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/headerContainer" android:background="?selectableItemBackground" android:paddingTop="@dimen/default_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/default_side_margin" android:paddingEnd="@dimen/default_side_margin">
+            <TextView android:textAppearance="@style/TextAppearance.Viki.Emphasis.S" android:ellipsize="end" android:id="@id/textview_header" android:paddingTop="@dimen/default_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toStartOf="@id/textview_more" android:layout_alignParentStart="true" />
+            <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Link.More" android:gravity="end|center" android:id="@id/textview_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:maxLines="1" android:layout_alignTop="@id/textview_header" android:layout_alignBottom="@id/textview_header" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:paddingBottom="@dimen/default_side_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_recyclerview_margin" android:paddingEnd="@dimen/default_recyclerview_margin" />
+        <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Tertiary" android:gravity="center" android:orientation="horizontal" android:id="@id/textview_error" android:background="@drawable/border_box_dotted_line" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_side_margin" android:layout_marginStart="@dimen/default_side_margin" android:layout_marginEnd="@dimen/default_side_margin" />
+    </LinearLayout>
+</merge>

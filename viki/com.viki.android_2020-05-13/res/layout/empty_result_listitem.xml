@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="46.0dip" android:paddingTop="@dimen/spacing_extra_large" android:paddingRight="46.0dip" android:paddingBottom="@dimen/spacing_extra_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="46.0dip" android:paddingEnd="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.XL" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_small" android:text="@string/empty_result_listitem_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/contents_secondary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_result_listitem_message" />
+</LinearLayout>

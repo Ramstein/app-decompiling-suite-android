@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/signup_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_below="@id/toolbar" android:layout_alignParentBottom="true">
+        <fragment android:name="com.viki.android.ui.registration.SignUpFragment" android:id="@id/signin_fragment" android:layout_width="fill_parent" style="@style/SignInFragments" />
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

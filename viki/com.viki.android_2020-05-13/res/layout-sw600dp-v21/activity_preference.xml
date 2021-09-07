@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_toolbar" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_above="@id/castMiniController" android:layout_below="@id/toolbar">
+        <ListView android:id="@id/lvHeader" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin" android:divider="@null" android:layout_weight="0.3" android:elevation="30.0dip" />
+        <FrameLayout android:id="@id/flContainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.7" />
+    </LinearLayout>
+    <View android:id="@id/selectorRepresenter" android:background="@color/vikiBlue" android:visibility="invisible" android:layout_width="3.0dip" android:layout_height="28.0dip" android:layout_below="@id/toolbar" android:layout_alignParentStart="true" />
+    <fragment android:id="@id/castMiniController" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" class="com.viki.android.chromecast.fragment.NewMiniControllerFragment" />
+</RelativeLayout>

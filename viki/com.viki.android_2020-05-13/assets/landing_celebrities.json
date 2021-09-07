@@ -1,0 +1,18 @@
+{
+  "type": "celebrities_landing",
+  "titles": {
+    "en": "Celebrities",
+    "ja": "著名人",
+    "es": "Celebridades",
+    "fr": "Vedettes",
+    "zh": "明星动态",
+    "zt": "明星動態",
+    "pt": "Celebridades",
+    "ko": "연예인"
+  },
+  "path": "/v4/people",
+  "params": {
+    "sort": "views_recent",
+    "per_page": 25
+  }
+}

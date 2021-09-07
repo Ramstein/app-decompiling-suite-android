@@ -1,0 +1,473 @@
+{
+  "homepage_layout_manager": {
+    "rows": [
+      {
+        "type": "billboard",
+        "options": {
+          "tracking_id": "channel_banner_1",
+          "api": {
+            "path": "/v4/lists/30l.json",
+            "params": {
+              "per_page": 1,
+              "page": 1
+            }
+          }
+        }
+      },
+      {
+        "type": "continue_watching",
+        "options": {
+          "tracking_id": "continue_watching",
+          "title": {
+            "en": "Continue Watching",
+            "ja": "視聴を続ける",
+            "es": "Continuar viendo",
+            "fr": "Continuer à regarder",
+            "zh": "继续观看",
+            "zt": "繼續觀看",
+            "pt": "Continue assistindo",
+            "ko": "계속 보기",
+            "de": "Weiter schauen",
+            "it": "Continua a guardare"
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "viki_exclusives",
+          "title": {
+            "en": "Only on Viki",
+            "ja": "Viki限定",
+            "es": "Sólo en Viki",
+            "fr": "Uniquement sur Viki",
+            "zh": "只有在 Viki",
+            "zt": "只有在 Viki",
+            "pt": "Somente no Viki",
+            "ko": "오직 Viki 에서만",
+            "de": "Nur auf Viki",
+            "it": "Solo su Viki"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "exclusive": "true",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "viki_pass_zone",
+          "title": {
+            "en": "Viki Pass Zone",
+            "ja": "Viki Passゾーン",
+            "es": "Zona Viki Pass",
+            "fr": "Zone Viki Pass",
+            "zh": "Viki Pass 地区",
+            "zt": "Viki Pass 地區",
+            "pt": "Zona Viki Pass",
+            "ko": "Viki Pass 존",
+            "de": "Viki Pass Zone",
+            "it": "Zona Viki Pass"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "has_paywall_content": "true",
+              "with_kcp": "true",
+              "sort": "views_recent"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "all_new",
+          "title": {
+            "en": "Latest Releases",
+            "ja": "最新のリリース",
+            "es": "Nuevos Estrenos",
+            "fr": "Dernières Sorties",
+            "zh": "热映新片",
+            "zt": "熱映新片",
+            "pt": "Lançamentos mais Recentes",
+            "ko": "최신작",
+            "de": "Neueste Veröffentlichungen",
+            "it": "Ultime Uscite"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "billboard",
+        "options": {
+          "tracking_id": "channel_banner_2",
+          "api": {
+            "path": "/v4/lists/30l.json",
+            "params": {
+              "per_page": 1,
+              "page": 2
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "china_trending",
+          "title": {
+            "en": "Top Mainland China Shows",
+            "ja": "中国の人気番組",
+            "es": "Mejores Programas de China",
+            "fr": "Meilleures Émissions de la Chine",
+            "zh": "顶级中国节目",
+            "zt": "頂級中國節目",
+            "pt": "Melhores Shows da China",
+            "ko": "중국 본토 최고 쇼",
+            "de": "Top Festland China zeigt",
+            "it": "Migliori Show della Cina"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "origin_country": "cn",
+              "sort": "views_recent"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "movies_new",
+          "title": {
+            "en": "Movies",
+            "ja": "映画",
+            "es": "Películas",
+            "fr": "Films",
+            "zh": "电影",
+            "zt": "電影",
+            "pt": "Filmes",
+            "ko": "영화",
+            "de": "Filme",
+            "it": "Film"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "type": "film",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "korean_trending",
+          "title": {
+            "en": "Top Korean Shows",
+            "ja": "韓国語の最も人気の番組",
+            "es": "Mejores Programas Coreanos",
+            "fr": "Meilleures Émissions Coréennes",
+            "zh": "顶级韩语节目",
+            "zt": "頂級韓國節目",
+            "pt": "Melhores Shows Coreanos",
+            "ko": "탑 한국 프로그램",
+            "de": "Die Besten Koreanischen Shows",
+            "it": "Migliori Show Coreani"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "origin_country": "kr",
+              "sort": "views_recent"
+            }
+          }
+        }
+      },
+      {
+        "type": "billboard",
+        "options": {
+          "tracking_id": "channel_banner_3",
+          "api": {
+            "path": "/v4/lists/30l.json",
+            "params": {
+              "per_page": 1,
+              "page": 3
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "thriller_new",
+          "title": {
+            "en": "Thriller & Suspense",
+            "ja": "サスペンス",
+            "es": "Thriller y Suspenso",
+            "fr": "Thriller et Suspense",
+            "zh": "惊悚和悬疑",
+            "zt": "驚悚和懸疑",
+            "pt": "Mistério e Suspense",
+            "ko": "스릴러 & 서스펜스",
+            "de": "Thriller & Spannung",
+            "it": "Thriller e Suspense"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "genre": "26g",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "scifi_new",
+          "title": {
+            "en": "Sci-Fi & Fantasy",
+            "ja": "SF＆ファンタジー",
+            "es": "Ciencia Ficción y Fantasía",
+            "fr": "Science-Fiction et Fantastique",
+            "zh": "科幻&奇幻",
+            "zt": "科幻&奇幻",
+            "pt": "Ficção e Fantasia",
+            "ko": "SF 및 판타지",
+            "de": "Sci-Fi & Fantasy",
+            "it": "Fantascienza e Fantasy"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "genre": "19g",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "costume_new",
+          "title": {
+            "en": "Costume & Period",
+            "ja": "時代劇",
+            "es": "Dramas de Época",
+            "fr": "Costume et Époque",
+            "zh": "古装",
+            "zt": "古裝",
+            "pt": "Figurino e Época",
+            "ko": "사극",
+            "de": "Kostüm & Periode",
+            "it": "Costume e Periodo"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "genre": "25g",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "variety_new",
+          "title": {
+            "en": "Variety Shows",
+            "ja": "バラエティー番組",
+            "es": "Shows de Variedades",
+            "fr": "Émissions de Variété ",
+            "zh": "综艺节目",
+            "zt": "綜藝節目",
+            "pt": "Shows de Variedades",
+            "ko": "버라이어티 쇼",
+            "de": "Varietéshows",
+            "it": "Spettacoli Varietà"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "genre": "1044g",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "recommendations",
+          "title": {
+            "en": "Recommended by Viki",
+            "ja": "Vikiのおすすめ",
+            "es": "Recomendados por Viki",
+            "fr": "Recommandés par Viki",
+            "zh": "Viki 推荐",
+            "zt": "Viki 推薦",
+            "pt": "Recomendado por Viki",
+            "ko": "Viki 추천",
+            "de": "Von Viki Empfohlen",
+            "it": "Consigliato da Viki"
+          },
+          "api": {
+            "path": "/v4/recommendations.json",
+            "params": {
+              "per_page": 20
+            }
+          }
+        }
+      },
+      {
+        "type": "billboard",
+        "options": {
+          "tracking_id": "channel_banner_4",
+          "api": {
+            "path": "/v4/lists/30l.json",
+            "params": {
+              "per_page": 1,
+              "page": 4
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "coming_soon",
+          "title": {
+            "en": "Coming Soon",
+            "ja": "近日公開",
+            "es": "Próximamente",
+            "fr": "Sorties Proches",
+            "zh": "即将播出",
+            "zt": "即將播出",
+            "pt": "Em Breve",
+            "ko": "곧 방영",
+            "de": "Demnächst",
+            "it": "Prossimamente"
+          },
+          "api": {
+            "path": "/v4/containers.json",
+            "params": {
+              "license": 1,
+              "per_page": 20,
+              "with_upcoming": "true",
+              "upcoming": "1",
+              "sort": "release_date"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "viki_collections",
+          "title": {
+            "en": "Viki Collections",
+            "ja": "Vikiコレクション",
+            "es": "Colecciones de Viki",
+            "fr": "Collections Viki",
+            "zh": "Viki 精选",
+            "zt": "Viki 精選",
+            "pt": "Coleções Viki",
+            "ko": "Viki 콜렉션",
+            "de": "Viki-Sammlungen",
+            "it": "Collezioni di Viki"
+          },
+          "api": {
+            "path": "/v4/lists/129524l.json",
+            "params": {
+              "per_page": 20
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "fan_collections",
+          "title": {
+            "en": "Fan Collections",
+            "ja": "ファンコレクション",
+            "es": "Colecciones de Fans",
+            "fr": "Collections des Fans",
+            "zh": "粉丝集锦",
+            "zt": "粉丝集锦",
+            "pt": "Coleções de Fãs",
+            "ko": "팬 콜렉션",
+            "de": "Fan-Sammlungen",
+            "it": "Collezioni dei Fan"
+          },
+          "api": {
+            "path": "/v4/lists.json",
+            "params": {
+              "per_page": 20,
+              "featured": 1,
+              "sort": "updated_at"
+            }
+          }
+        }
+      },
+      {
+        "type": "list",
+        "options": {
+          "tracking_id": "celebrities_trending",
+          "title": {
+            "en": "Popular Celebrities",
+            "ja": "人気俳優",
+            "es": "Celebridades Populares",
+            "fr": "Célébrités populaires",
+            "zh": "名演员",
+            "zt": "名演員",
+            "pt": "Celebridades Populares",
+            "ko": "유명 인사",
+            "de": "Populäre Berühmtheiten",
+            "it": "Celebrità popolari"
+          },
+          "api": {
+            "path": "/v4/people.json",
+            "params": {
+              "per_page": 20,
+              "sort": "views"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

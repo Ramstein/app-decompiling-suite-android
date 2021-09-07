@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/deprecated_material_gray_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@id/filter_header" android:background="@color/deprecated_material_gray_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <ImageButton android:layout_gravity="end|center" android:id="@id/imageview_close" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_tick_white" android:paddingStart="@dimen/default_side_margin" android:paddingEnd="@dimen/default_side_margin" />
+        <TextView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter" android:layout_marginStart="@dimen/default_side_margin" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/resetFrame" android:layout_width="108.0dip" android:layout_height="36.0dip" android:layout_marginTop="@dimen/default_side_margin" android:layout_marginBottom="@dimen/default_side_margin" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/default_side_margin" android:layout_marginEnd="@dimen/default_side_margin">
+        <Button android:textSize="@dimen/text_size_tag" android:id="@id/button_reset" android:layout_width="108.0dip" android:layout_height="wrap_content" android:text="@string/reset_all" style="@style/VikiTheme.Button.Outlined" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_category" android:layout_width="@dimen/explore_category_width" android:layout_height="fill_parent" android:layout_above="@id/resetFrame" android:layout_below="@id/filter_header" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_entries" android:background="@color/surface_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/filter_header" android:layout_toEndOf="@id/recyclerview_category" />
+</RelativeLayout>

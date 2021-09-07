@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/applayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.viki.android.customviews.EndlessRecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.viki.shared.views.FabAwareScrollingViewBehavior" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/keyline_16" android:src="@drawable/ic_comment_small_white" app:srcCompat="@drawable/u_addtolist" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <fragment android:id="@id/castMiniController" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.viki.android.chromecast.fragment.NewMiniControllerFragment" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+{
+  "type": "container",
+  "titles": {
+    "en": "Explore",
+    "ja": "探索",
+    "es": "Explorar",
+    "fr": "Explorez",
+    "zh": "发现更多",
+    "zt": "發現更多",
+    "pt": "Explorar",
+    "ko": "탐색"
+  },
+  "path": "/v4/containers",
+  "params": {
+    "sort": "views_recent",
+    "hosted": 1,
+    "licensed": 1,
+    "per_page": 25
+  },
+  "action": "container"
+}

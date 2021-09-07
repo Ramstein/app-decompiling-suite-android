@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/keyline_12" android:layout_marginEnd="@dimen/keyline_12" app:cardCornerRadius="@dimen/keyline_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.viki.android.customviews.FactorAspectRatioImageView android:id="@id/imgBg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:aspectRatio="@dimen/braze_banner_aspect_ratio" app:aspectRatioEnabled="true" app:dominantMeasurement="width" />
+</androidx.cardview.widget.CardView>

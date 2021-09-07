@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="continue_watching_shows_removed">
+        <item quantity="other">已删除</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">%d日套餐</item>
+    </plurals>
+    <plurals name="day">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">天</item>
+    </plurals>
+    <plurals name="episode">
+        <item quantity="other">%d集</item>
+    </plurals>
+    <plurals name="followers">
+        <item quantity="other">%s 关注者</item>
+    </plurals>
+    <plurals name="free_episodes">
+        <item quantity="other">免费剧集</item>
+    </plurals>
+    <plurals name="free_hour">
+        <item quantity="other">%d小时之内免费观看</item>
+    </plurals>
+    <plurals name="general_subscription_message_with_days">
+        <item quantity="other">此集節目目前僅限 %1$s 訂閱者觀看，其他人還要等 %2$d 天。等不及了嗎？</item>
+    </plurals>
+    <plurals name="hour">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="left_days">
+        <item quantity="other">剩%d天</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d 分钟前</item>
+    </plurals>
+    <plurals name="monthly">
+        <item quantity="other">%d月套餐</item>
+    </plurals>
+    <plurals name="per_month">
+        <item quantity="other">每 %d 个月</item>
+    </plurals>
+    <plurals name="per_week">
+        <item quantity="other">每 %d 个星期</item>
+    </plurals>
+    <plurals name="per_year">
+        <item quantity="other">每 %d 年</item>
+    </plurals>
+    <plurals name="second">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="shows">
+        <item quantity="other">%d 条内容</item>
+    </plurals>
+    <plurals name="trial_day">
+        <item quantity="other">获得%d天免费</item>
+    </plurals>
+    <plurals name="trial_day_left">
+        <item quantity="other">免费试用：剩下%d天</item>
+    </plurals>
+    <plurals name="trial_month">
+        <item quantity="other">获得%d个月免费</item>
+    </plurals>
+    <plurals name="trial_week">
+        <item quantity="other">获得%d周免费</item>
+    </plurals>
+    <plurals name="trial_year">
+        <item quantity="other">获得%d年免费</item>
+    </plurals>
+    <plurals name="video_behind_pass_day">
+        <item quantity="other">此集節目目前僅限 %1$s 訂閱者觀看，其他人還要等 %2$d 天。等不及了嗎？</item>
+    </plurals>
+    <plurals name="video_for_vp_available">
+        <item quantity="other">此集节目目前仅限 Viki Pass Standard 订阅者观看，其他人还要等 %d 天。等不及了吗？</item>
+    </plurals>
+    <plurals name="video_for_vp_plus">
+        <item quantity="other">此集节目目前仅限 Viki Pass Plus 订阅者观看，其他人还要等 %d 天。等不及了吗？</item>
+    </plurals>
+    <plurals name="week">
+        <item quantity="other">%d 周</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">%d周套餐</item>
+    </plurals>
+    <plurals name="yearly">
+        <item quantity="other">%d年套餐</item>
+    </plurals>
+</resources>

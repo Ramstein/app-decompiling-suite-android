@@ -1,0 +1,22 @@
+{
+  "type": "ucc_landing",
+  "titles": {
+    "en": "Fan Collections",
+    "ja": "ファンコレクション",
+    "es": "Colecciones de fans",
+    "fr": "Listes à voir des fans",
+    "zh": "粉丝集锦",
+    "zt": "粉絲集錦",
+    "pt": "Coleções de fãs",
+    "ko": "팬 컬렉션"
+  },
+  "path": "/v4/user-lists",
+  "params": {
+    "sort": "followers",
+    "with_resources": true,
+    "with_items": true,
+    "list_type": "user",
+    "per_page": 25
+  },
+  "action": "container"
+}

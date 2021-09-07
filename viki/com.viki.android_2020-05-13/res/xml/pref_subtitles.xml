@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/subtitles" android:key="@string/pref_key_subtitle">
+        <SwitchPreference android:title="@string/show_subtitles" android:key="@string/show_subtitle_prefs" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/subtitle_other" android:key="@string/subtitle_other_prefs" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

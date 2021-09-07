@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline_4" app:cardCornerRadius="@dimen/resource_round_radius" app:cardElevation="@dimen/resource_card_elevation">
+        <com.viki.android.customviews.FactorAspectRatioImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:aspectRatio="@dimen/image_aspect_ratio" app:aspectRatioEnabled="true" app:dominantMeasurement="width" />
+        <ViewStub android:id="@id/stub_blocker" android:visibility="gone" android:layout="@layout/uicomponent_mediaresourceblocker" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/pbWatchBar" android:visibility="invisible" android:layout_width="fill_parent" style="@style/WatchMarkerProgressBar" />
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_primary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/txtTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top" android:maxLines="1" android:layout_below="@id/cardView" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.XS" android:textColor="@color/contents_tertiary" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/txtSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_bottom" android:maxLines="1" android:layout_below="@id/txtTitle" android:layout_centerHorizontal="true" />
+</RelativeLayout>

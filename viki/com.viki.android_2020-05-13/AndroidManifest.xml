@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:instant="http://schemas.android.com/instantapps"
+    package="com.viki.android">
+
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.viki.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.viki.android.permission.C2D_MESSAGE"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/new_viki_launcher" android:label="@string/viki_app_name" android:largeHeap="true" android:name="com.viki.android.VikiApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/new_viki_launcher_round" android:supportsRtl="false" android:testOnly="false" android:theme="@style/VikiTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/notification_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification_color"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/notification_channel_promotion"/>
+        <provider android:authorities="com.viki.android.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.viki.android.SplashActivity" android:resizeableActivity="true" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+            <intent-filter android:autoVerify="true" instant:order="1">
+
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:host="viki.onelink.me" android:pathPrefix="/L8qp" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/movies" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/movies" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/tv" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/tv" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/videos" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/videos" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/collections" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/collections" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/celebrities" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/celebrities" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/pass" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/pass" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/explore" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/explore" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/home" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/home" android:scheme="https"/>
+                <data android:host="support.viki.com" android:path="/" android:scheme="http"/>
+                <data android:host="support.viki.com" android:path="/" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/u/verify" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/sign_up" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/sign_up" android:scheme="http"/>
+                <data android:host="www.viki.com" android:pathPrefix="/sign_in" android:scheme="https"/>
+                <data android:host="www.viki.com" android:pathPrefix="/sign_in" android:scheme="http"/>
+
+                <data android:host="my_host" android:scheme="your"/>
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="videos" android:scheme="viki"/>
+                <data android:host="container" android:scheme="viki"/>
+                <data android:host="person" android:scheme="viki"/>
+                <data android:host="tag" android:scheme="viki"/>
+                <data android:host="collections" android:scheme="viki"/>
+                <data android:host="vikipass" android:scheme="viki"/>
+                <data android:host="home" android:scheme="viki"/>
+                <data android:host="explore" android:scheme="viki"/>
+                <data android:host="sign_in" android:scheme="viki"/>
+                <data android:host="sign_up" android:scheme="viki"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="cast" android:path="/join" android:scheme="viki"/>
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name="com.viki.android.MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <receiver android:label="Mainbr" android:name="com.viki.android.Mainbr">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.viki.android.Mainser" android:permission="TODO"/>
+
+
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.CommentActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.CommentComposeActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.ContainerActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.CelebritiesActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.UserProfileActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" 
+        android:name="com.viki.android.MainActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="viki.com" android:scheme="viki"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.ExploreActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.UCCActivity" android:resizeableActivity="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:logo="@drawable/viki_logo" android:name="com.viki.android.AboutActivity" android:resizeableActivity="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.UCCSearchActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.UccComposeNoteActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:name="com.viki.android.ReviewComposeActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/viki_app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.UccComposeActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.WatchListActivity" android:resizeableActivity="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.WatchlistSearchActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme"/>
+        <activity android:name="com.viki.android.chromecast.activity.ChromeCastExpandedControllActivity" android:theme="@style/VikiTheme.VideoActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.ui.registration.GeneralSignInActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.android.ui.registration.EmailSignInActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.android.ui.registration.ForgotPasswordActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.android.ui.registration.SignUpActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.BirthdayUpdateActivity"/>
+        <receiver android:name="com.viki.android.chromecast.ChromeCastMediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.viki.android.notification.VikiFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="a47d53a98970a02f046ae19dfb34cb90d95a7afc"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.viki.android.chromecast.CastOptionsProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:logo="@drawable/viki_logo" android:name="com.viki.android.ui.settings.SettingsActivity" android:theme="@style/VikiTheme.PreferenceActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:logo="@drawable/viki_logo" android:name="com.viki.android.ui.settings.GenericPreferenceActivity" android:theme="@style/VikiTheme.PreferenceActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.android.zendesk.ZendeskWrapperActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.viki.android.video.VideoActivity" android:resizeableActivity="true" android:theme="@style/VikiTheme.VideoActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.viki.android.IAPActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.viki.android.ui.discussion.DiscussionActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.android.zendesk.video.ReportVideoIssueActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.customercare.helpcenter.HelpCenterActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.customercare.helpcenter.article.ViewArticleActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.customercare.helpcenter.deflection.DeflectionActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.customercare.ticket.list.base.SupportTicketsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.viki.customercare.ticket.detail.SupportTicketDetailsActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.customercare.helpcenter.section.SectionedArticleListActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.viki.customercare.ticket.list.solved.SolvedSupportTicketsActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.viki.shared.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="zendesk.support.request.RequestActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/zs_view_article_loading_title" android:name="zendesk.support.guide.ViewArticleActivity"/>
+        <activity android:label="@string/support_activity_title" android:name="zendesk.support.guide.HelpCenterActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/request_list_activity_title" android:name="zendesk.support.requestlist.RequestListActivity"/>
+        <receiver android:exported="false" android:name="zendesk.support.DeepLinkingBroadcastReceiver">
+            <intent-filter>
+                <action android:name="zendesk.support"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.viki.android.zendesk.support.SupportSdkStartupProvider" android:enabled="true" android:exported="false" android:name="zendesk.support.SupportSdkStartupProvider"/>
+        <activity android:exported="false" android:name="com.viki.updater.ResultStubActivity"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true"/>
+        <provider android:authorities="com.viki.android.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <activity android:label="@string/app_name" android:name="com.surveymonkey.surveymonkeyandroidsdk.SMFeedbackActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <activity android:name="com.appboy.ui.AppboyWebViewActivity"/>
+        <activity android:name="com.appboy.ui.activities.AppboyFeedActivity"/>
+        <activity android:name="com.appboy.ui.activities.AppboyContentCardsActivity"/>
+        <activity android:name="com.appboy.push.AppboyNotificationRoutingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.appboy.AppboyFcmReceiver"/>
+        <receiver android:exported="true" android:name="com.quantcast.measurement.service.QCReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="OtherName" android:name="com.quantcast.measurement.service.AboutQuantcastScreen"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.viki.android.belvedere2.attachments" android:exported="false" android:grantUriPermissions="true" android:name="zendesk.belvedere.BelvedereFileProvider" android:readPermission="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/belvedere_attachment_storage_v2"/>
+        </provider>
+        <provider android:authorities="com.viki.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.viki.android.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.facebook.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.viki.android.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.appboy.receivers.AppboyActionReceiver"/>
+        <provider android:authorities="com.viki.android.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="2.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="6"/>
+    </application>
+</manifest>

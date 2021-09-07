@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/u_addtolist" android:id="@id/mi_action" android:title="@string/add_shows_to_your_collection" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_follow" android:id="@id/mi_follow" android:title="Follow" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_share" android:id="@id/mi_share" android:title="@string/share" app:showAsAction="always" />
+</menu>

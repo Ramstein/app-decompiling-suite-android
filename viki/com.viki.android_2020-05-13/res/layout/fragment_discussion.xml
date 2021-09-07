@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/containerCommentInput" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Title" android:id="@id/tvEmpty" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="48.0dip" android:text="@string/no_discussions_yet" android:textAlignment="center" app:layout_constraintBottom_toTopOf="@id/containerCommentInput" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/containerCommentInput" android:background="@color/surface_3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <EditText android:textAppearance="@style/TextAppearance.VikiTheme.Body1" android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorTertiary" android:id="@id/etComment" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:hint="@string/say_something" android:layout_weight="1.0" style="@style/Paragraph" />
+        <FrameLayout android:id="@id/btnPost" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="56.0dip" android:foreground="?selectableItemBackgroundBorderless" android:minWidth="56.0dip">
+            <TextView android:enabled="false" android:textStyle="bold" android:textColor="@color/borderless_button_text_color" android:layout_gravity="center" android:id="@id/btnPostLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

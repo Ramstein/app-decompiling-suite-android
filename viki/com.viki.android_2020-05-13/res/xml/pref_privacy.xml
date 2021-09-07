@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/privacy_section">
+        <Preference android:title="@string/personal_info_pref" android:key="@string/privacy_my_data_prefs" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

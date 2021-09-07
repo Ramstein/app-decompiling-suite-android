@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/account" android:key="@string/pref_key_general">
+        <Preference android:key="@string/general_login_to_app_prefs" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/user_birthday" android:key="@string/general_user_birthday_prefs" app:iconSpaceReserved="false" />
+        <ListPreference android:title="@string/preferred_language" android:key="@string/general_preferred_language_prefs" android:summary="%s" android:dialogTitle="" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="@string/news_letter" android:key="@string/email_newsletter_prefs" android:summary="@string/newsletter_pref_summary" android:defaultValue="false" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

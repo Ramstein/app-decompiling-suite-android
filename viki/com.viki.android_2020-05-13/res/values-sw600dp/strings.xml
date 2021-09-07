@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_channel_res">720x403</string>
+    <string name="image_channel_res_low">360x201</string>
+    <string name="image_featured_banner">720x250</string>
+    <string name="image_featured_banner_low">360x125</string>
+    <string name="image_thumb_res">360x201</string>
+    <string name="image_thumb_res_low">180x100</string>
+</resources>

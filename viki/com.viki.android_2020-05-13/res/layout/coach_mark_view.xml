@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.VikiTheme.Body1" android:id="@id/tvCoachText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pointer_coach_mark_top_padding" android:layout_marginStart="@dimen/pointer_coach_mark_side_padding" android:layout_marginEnd="@dimen/pointer_coach_mark_side_padding" />
+    <Button android:layout_gravity="end" android:id="@id/btnCoachAcknowledge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pointer_coach_mark_message_button_gap" android:layout_marginStart="@dimen/pointer_coach_mark_button_side_margin" android:layout_marginEnd="@dimen/pointer_coach_mark_button_side_margin" style="@style/VikiTheme.Button.TextButton" />
+</merge>

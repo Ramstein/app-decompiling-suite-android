@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/sm_feedback_no_network" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:id="@id/no_network_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/no_connection_title" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center_horizontal" android:id="@id/no_network_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/no_connection_description" android:layout_below="@id/no_network_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <WebView android:id="@id/sm_feedback_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

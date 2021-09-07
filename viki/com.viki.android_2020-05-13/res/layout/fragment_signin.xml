@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_centerVertical="true" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/login_page_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/signinpage_logo_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" app:srcCompat="@drawable/new_viki_splash" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/contents_secondary" android:gravity="center_horizontal" android:id="@id/textview_towatch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:lineSpacingExtra="4.0sp" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/contents_tertiary" android:gravity="center_horizontal" android:id="@id/textview_free_deadline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" />
+            </LinearLayout>
+            <Button android:id="@id/button_facebook" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/login_with_fb" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:icon="@drawable/viki_new_login_facebook_logo" style="@style/VikiTheme.Button.SignIn.Facebook" />
+            <Button android:id="@id/button_google" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/login_with_google" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:icon="@drawable/viki_new_login_google_logo" style="@style/VikiTheme.Button.SignIn.Google" />
+            <Button android:id="@id/button_rakuten" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_with_rakuten_id" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:icon="@drawable/logo_rakuten_one" style="@style/VikiTheme.Button.SignIn.Rakuten" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/login_page_buttons2_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip">
+                <TextView android:textSize="15.0sp" android:typeface="normal" android:textStyle="bold" android:textColor="@color/contents_tertiary" android:gravity="center" android:id="@id/textview_email" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/email_login" android:layout_weight="0.5" />
+                <View android:background="@color/contents_tertiary" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="15.0sp" android:typeface="normal" android:textStyle="bold" android:textColor="@color/contents_tertiary" android:gravity="center" android:id="@id/textview_signup" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sign_up" android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

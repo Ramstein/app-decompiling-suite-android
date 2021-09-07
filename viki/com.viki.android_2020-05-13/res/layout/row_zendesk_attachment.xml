@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="62.0dip" android:layout_height="62.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zendesk_attachment_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/progressContainer" android:background="@color/surface_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/retry_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/zendesk_attachment_error_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.XS" android:textColor="@color/contents_red" android:id="@id/retry" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_small" android:text="@string/attachment_upload_error_short_label" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/zendesk_attachment_close_imageview" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zendesk_close" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

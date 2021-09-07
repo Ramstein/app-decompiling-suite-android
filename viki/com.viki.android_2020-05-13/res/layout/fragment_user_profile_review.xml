@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading_pagination" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/empty_message" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swiperefresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_recyclerview_margin" android:layout_marginEnd="@dimen/default_recyclerview_margin">
+        <com.viki.android.customviews.EndlessRecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <EditText android:id="@id/edittext_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_side_margin" android:layout_marginBottom="@dimen/default_side_margin" android:hint="@string/search" android:singleLine="true" android:inputType="textCapWords" android:layout_marginStart="@dimen/default_side_margin" android:layout_marginEnd="@dimen/default_side_margin" style="@style/VikiTheme.EditText" />
+    <com.viki.android.customviews.EndlessRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recyclerview" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:numColumns="@integer/list_num_columns" android:divider="@color/contents_tertiary" android:dividerHeight="0.0dip" android:layout_marginStart="@dimen/default_side_margin" android:layout_marginEnd="@dimen/default_side_margin" />
+</LinearLayout>

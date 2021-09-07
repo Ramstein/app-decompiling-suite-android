@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/scroll_dow_text_size" android:textColor="@color/contents_secondary" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" android:text="@string/episode_empty_head" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/desc_text_size" android:textColor="@color/contents_tertiary" android:gravity="center" android:id="@id/txtContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/episode_empty_desc" android:layout_below="@id/txtTitle" android:layout_centerHorizontal="true" android:lineSpacingExtra="1.0sp" />
+    <TextView android:textSize="@dimen/desc_text_size" android:textColor="@color/deprecated_canterbury_rose" android:id="@id/txtPopularClick" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_button_margin" android:text="@string/episode_empty_button" android:layout_below="@id/txtContent" android:layout_centerHorizontal="true" android:lineSpacingExtra="1.0sp" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/timed_comments">
+        <ListPreference android:entries="@array/timed_comment_options" android:title="@string/show_timed_comment" android:key="@string/show_timed_comment_prefs" android:summary="%s" android:entryValues="@array/timed_comment_options_values" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

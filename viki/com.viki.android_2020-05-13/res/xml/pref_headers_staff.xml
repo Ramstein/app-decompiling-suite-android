@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:onepref="http://schemas.android.com/apk/res-auto">
+    <header onepref:fragment="com.viki.android.ui.settings.fragment.FeedbackPreferenceFragment" onepref:title="@string/support" />
+    <header onepref:fragment="com.viki.android.ui.settings.fragment.GeneralPreferenceFragment" onepref:title="@string/account" />
+    <header onepref:fragment="com.viki.android.ui.settings.fragment.VideoPreferenceFragment" onepref:title="@string/video_settings" />
+    <header onepref:fragment="com.viki.android.ui.settings.fragment.CaptionPreferenceFragment" onepref:title="@string/subtitles" />
+    <header onepref:fragment="com.viki.android.ui.settings.fragment.TimedCommentPreferenceFragment" onepref:title="@string/timed_comments" />
+    <header onepref:fragment="com.viki.android.ui.settings.fragment.MiscellaneousPreferenceFragment" onepref:title="@string/about" />
+</preference-headers>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="continue_watching_shows_removed">
+        <item quantity="other">番組を削除しました</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">%d日無料</item>
+    </plurals>
+    <plurals name="day">
+        <item quantity="other">%d 日</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">日</item>
+    </plurals>
+    <plurals name="episode">
+        <item quantity="other">%d本のエピソード</item>
+    </plurals>
+    <plurals name="followers">
+        <item quantity="other">%s フォロワー</item>
+    </plurals>
+    <plurals name="free_episodes">
+        <item quantity="other">無料のエピソード</item>
+    </plurals>
+    <plurals name="free_hour">
+        <item quantity="other">次回の%d時間を無料で観ましょう。</item>
+    </plurals>
+    <plurals name="general_subscription_message_with_days">
+        <item quantity="other">この動画は、%1$s のご登録者のみご覧いただけます。%2$d日後にすべての方にご覧いただけるようになります。待ちきれませんか?</item>
+    </plurals>
+    <plurals name="hour">
+        <item quantity="other">%d 時間</item>
+    </plurals>
+    <plurals name="left_days">
+        <item quantity="other">残り%d日</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="monthly">
+        <item quantity="other">%d カ月</item>
+    </plurals>
+    <plurals name="per_month">
+        <item quantity="other">%d カ月ごと</item>
+    </plurals>
+    <plurals name="per_week">
+        <item quantity="other">%d 週ごと</item>
+    </plurals>
+    <plurals name="per_year">
+        <item quantity="other">%d 年ごと</item>
+    </plurals>
+    <plurals name="second">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="shows">
+        <item quantity="other">%dの番組</item>
+    </plurals>
+    <plurals name="trial_day">
+        <item quantity="other">%d日無料で視聴しましょう</item>
+    </plurals>
+    <plurals name="trial_day_left">
+        <item quantity="other">無料トライアル：あと%d日</item>
+    </plurals>
+    <plurals name="trial_month">
+        <item quantity="other">%dか月無料で視聴しましょう</item>
+    </plurals>
+    <plurals name="trial_week">
+        <item quantity="other">%d週間無料で視聴しましょう</item>
+    </plurals>
+    <plurals name="trial_year">
+        <item quantity="other">%d年無料で視聴しましょう</item>
+    </plurals>
+    <plurals name="video_behind_pass_day">
+        <item quantity="other">この動画は、%1$s のご登録者のみご覧いただけます。%2$d日後にすべての方にご覧いただけるようになります。待ちきれませんか?</item>
+    </plurals>
+    <plurals name="video_for_vp_available">
+        <item quantity="other">この動画は、Viki Pass Standard のご登録者のみご覧いただけます。%d日後にすべての方にご覧いただけるようになります。待ちきれませんか?</item>
+    </plurals>
+    <plurals name="video_for_vp_plus">
+        <item quantity="other">このエピソードは、Viki Pass Plusのご登録者のみご覧いただけます。%d日後にすべての方にご覧いただけるようになります。待ちきれませんか?</item>
+    </plurals>
+    <plurals name="week">
+        <item quantity="other">%d 週間</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">%d 週</item>
+    </plurals>
+    <plurals name="yearly">
+        <item quantity="other">%d 年</item>
+    </plurals>
+</resources>

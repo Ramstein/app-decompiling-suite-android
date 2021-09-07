@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:gravity="center" android:id="@id/loading_pagination_progress_bar" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/progressBar" />
+    <LinearLayout android:textColor="@color/contents_tertiary" android:gravity="center" android:orientation="horizontal" android:id="@id/loading_pagination_error" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:id="@id/loading_pagination_error_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/loading_pagination_error" android:layout_weight="1.0" />
+        <ImageView android:id="@id/loading_pagination_error_refresh_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_navigation_refresh" android:text="@string/retry" />
+    </LinearLayout>
+</RelativeLayout>

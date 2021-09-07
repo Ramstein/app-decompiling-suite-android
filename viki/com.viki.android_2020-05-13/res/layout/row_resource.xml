@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyline_4" app:cardCornerRadius="@dimen/resource_round_radius" app:cardElevation="@dimen/resource_card_elevation">
+        <com.viki.android.customviews.FactorAspectRatioImageView android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:aspectRatio="@dimen/image_aspect_ratio" app:aspectRatioEnabled="true" app:dominantMeasurement="width" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/pbWatchBar" android:layout_width="fill_parent" style="@style/WatchMarkerProgressBar" />
+        <include android:id="@id/uicomponent_containerstatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/uicomponent_containerstatus" />
+        <ViewStub android:id="@id/stub_blocker" android:visibility="gone" android:layout="@layout/uicomponent_mediaresourceblocker" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/playButtonOverlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/play_button_overlay" />
+    </com.google.android.material.card.MaterialCardView>
+    <View android:id="@id/editMask" android:background="@color/surface_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/cardView" android:layout_alignBottom="@id/cardView" />
+    <include android:id="@id/containerAccessLevelComponent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cardView" android:layout_alignStart="@id/cardView" android:layout_alignEnd="@id/cardView" layout="@layout/uicomponent_containeraccesslevel" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/height_home_content_info" android:layout_below="@id/containerAccessLevelComponent" android:layout_alignStart="@id/cardView" android:layout_alignEnd="@id/cardView">
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_primary" android:ellipsize="end" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:maxLines="2" />
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.XS" android:textColor="@color/contents_tertiary" android:ellipsize="end" android:id="@id/textview_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <CheckBox android:id="@id/ivSelected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/keyline_8" android:button="@drawable/check_button" android:layout_alignParentTop="true" android:layout_alignStart="@id/cardView" />
+</RelativeLayout>

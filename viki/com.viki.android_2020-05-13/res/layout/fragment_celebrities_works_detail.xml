@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_setting" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ic_filter_blue" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/container_sort" android:layout_width="fill_parent" android:layout_height="@dimen/sort_height" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/imageview_setting">
+        <TextView android:textSize="16.0sp" android:textColor="@color/contents_secondary" android:gravity="center" android:id="@id/textview_new_sort" android:background="@drawable/oblong_dark_left_pressed" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/new_text" android:layout_weight="1.0" android:fontFamily="sans-serif-light" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/contents_primary" android:gravity="center" android:id="@id/textview_popular_sort" android:background="@drawable/oblong_dark_right_idle" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/popular" android:layout_weight="1.0" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/container_filter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/container_sort">
+        <View android:background="@color/vikiBlue_var2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/container_role" android:background="@drawable/clickable_row_works" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@drawable/clickable_textview_works" android:id="@id/textview_role" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/role" android:fontFamily="sans-serif" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@drawable/clickable_textview_works" android:id="@id/textview_role_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/all_roles" android:fontFamily="sans-serif-light" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <View android:background="@color/vikiBlue_var2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/container_category" android:background="@drawable/clickable_row_works" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@drawable/clickable_textview_works" android:id="@id/textview_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/category" android:fontFamily="sans-serif" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@drawable/clickable_textview_works" android:id="@id/textview_category_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/all_categories" android:fontFamily="sans-serif-light" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <View android:background="@color/vikiBlue_var2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <com.viki.android.customviews.EndlessRecyclerView android:id="@id/rvVideos" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/container_filter" />
+</RelativeLayout>

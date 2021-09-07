@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/about">
+        <Preference android:title="@string/about" android:key="@string/about_prefs" app:iconSpaceReserved="false">
+            <intent android:targetPackage="@string/package_name" android:targetClass="com.viki.android.AboutActivity" />
+        </Preference>
+        <Preference android:title="@string/terms_of_use" android:key="@string/term_of_use_prefs" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/intellectual_property" android:key="@string/ip_prefs" app:iconSpaceReserved="false" />
+        <Preference app:iconSpaceReserved="false" app:key="open_source_licenses" app:title="Open-source licenses" />
+    </PreferenceCategory>
+</PreferenceScreen>

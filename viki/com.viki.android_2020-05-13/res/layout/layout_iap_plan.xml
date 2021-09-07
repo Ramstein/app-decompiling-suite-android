@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/infoContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/iap_tag_height_half" android:paddingStart="@dimen/default_side_margin" android:paddingEnd="@dimen/default_side_margin">
+        <LinearLayout android:orientation="vertical" android:id="@id/llPricing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/iap_price" android:textStyle="bold" android:id="@id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/small_text_size" android:layout_gravity="end" android:id="@id/tvInterval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0sp" android:alpha="0.54" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/llPricing">
+            <TextView android:textSize="@dimen/desc_text_size" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0sp" android:alpha="0.87" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="9.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/tvTag" android:background="@drawable/sales_tag" android:layout_width="wrap_content" android:layout_height="@dimen/iap_tag_height" android:paddingEnd="@dimen/padding_small" />
+</merge>

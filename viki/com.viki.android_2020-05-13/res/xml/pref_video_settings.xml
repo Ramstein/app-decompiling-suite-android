@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings" android:key="@string/pref_key_setting">
+        <SwitchPreference android:title="@string/show_subtitles" android:key="@string/show_subtitle_prefs" app:iconSpaceReserved="false" />
+        <ListPreference android:title="@string/subtitle_languages" android:key="@string/subtitle_language_prefs" android:summary="%s" android:dialogTitle="" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/subtitle_other" android:key="@string/pref_subtitle_look" app:iconSpaceReserved="false" />
+        <ListPreference android:entries="@array/quality_names" android:title="@string/video_resolution" android:key="@string/video_quality_pref" android:summary="%s" android:entryValues="@array/quality_values" app:iconSpaceReserved="false" />
+        <ListPreference android:entries="@array/timed_comment_options" android:title="@string/show_timed_comment" android:key="@string/show_timed_comment_prefs" android:summary="%s" android:entryValues="@array/timed_comment_options_values" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="@string/ads" android:key="@string/ads" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/more_setting" app:iconSpaceReserved="false">
+            <intent android:targetPackage="@string/package_name" android:targetClass="com.viki.android.ui.settings.SettingsActivity" />
+        </Preference>
+        <Preference android:title="Report Video Issues" android:key="@string/pref_report_video_issue" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

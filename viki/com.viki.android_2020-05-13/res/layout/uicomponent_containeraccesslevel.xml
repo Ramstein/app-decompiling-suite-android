@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Emphasis.XXS" android:textColor="@color/contents_secondary" android:ellipsize="end" android:id="@id/tvAccessName" android:background="@color/surface_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:textAllCaps="true" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginEnd="@dimen/padding_small" />
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Emphasis.XXS" android:textColor="@color/contents_tertiary" android:ellipsize="end" android:id="@id/tvWatchFree" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_free" android:lines="1" android:singleLine="true" android:layout_marginEnd="@dimen/padding_small" />
+    <TextView android:textAppearance="@style/TextAppearance.Viki.Emphasis.XXS" android:textColor="@color/contents_secondary" android:ellipsize="end" android:id="@id/tvFreeEpisodesLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:fontFamily="sans-serif" />
+</LinearLayout>

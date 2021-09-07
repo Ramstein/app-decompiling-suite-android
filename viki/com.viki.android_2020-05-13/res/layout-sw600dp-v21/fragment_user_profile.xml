@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.37" android:elevation="30.0dip">
+        <RelativeLayout android:id="@id/profileInfoContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/infoContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/profile_settings" />
+            <View android:id="@id/divider" android:background="@color/contents_disabled" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/infoContainer" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider" layout="@layout/profile_info" />
+            <View android:id="@id/selectorRepresenter" android:background="@color/vikiBlue" android:visibility="invisible" android:layout_width="3.0dip" android:layout_height="24.0dip" android:layout_below="@id/divider" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@id/fragmentContainer" android:paddingBottom="@dimen/bottom_bar_height" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.63" />
+</LinearLayout>

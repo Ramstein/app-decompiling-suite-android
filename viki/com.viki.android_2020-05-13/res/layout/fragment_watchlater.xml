@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/applayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.viki.android.customviews.EndlessRecyclerView android:id="@id/endlessrecyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.viki.shared.views.FabAwareScrollingViewBehavior" />
+    <RelativeLayout android:id="@id/overlay_popup_fab" android:background="@color/surface_transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/keyline_16" app:srcCompat="@drawable/u_addtolist" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

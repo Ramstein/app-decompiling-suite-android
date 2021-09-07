@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/gray_dot_background" android:layout_width="62.0dip" android:layout_height="62.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zendesk_takepicture_imageview" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/attachment_take" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

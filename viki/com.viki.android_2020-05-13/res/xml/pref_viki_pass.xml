@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/viki_pass" android:key="@string/pref_key_vikipass">
+        <Preference android:title="@string/upgrade_vikipass" android:key="@string/upgrade_to_vikipass_prefs" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/restore_purchase" android:key="@string/restore_purchase_prefs" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/manage_subscriptions" android:key="@string/manage_subscription_prefs" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

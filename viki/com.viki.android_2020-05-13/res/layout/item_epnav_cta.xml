@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?selectableItemBackground" android:paddingTop="@dimen/episode_navigation_section_header_height" android:layout_width="@dimen/episode_navigation_thumbnail_width" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.VikiTheme.Body1" android:gravity="center" android:id="@id/tvCtaMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@id/btnCta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</LinearLayout>

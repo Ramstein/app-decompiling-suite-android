@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="actionbar_icon_size">64.0dip</dimen>
+    <dimen name="actionbar_text_size">22.0sp</dimen>
+    <dimen name="blocked_text_size">16.0sp</dimen>
+    <dimen name="bottom_sheet_peek_height">250.0dip</dimen>
+    <dimen name="button_text_size">18.0sp</dimen>
+    <dimen name="channel_header_country_size">18.0sp</dimen>
+    <dimen name="channel_header_subtitle_size">24.0sp</dimen>
+    <dimen name="channel_header_title_size">30.0sp</dimen>
+    <dimen name="com_appboy_content_cards_max_width">600.0dip</dimen>
+    <dimen name="com_appboy_feed_max_width">600.0dip</dimen>
+    <dimen name="container_divider_height">8.0sp</dimen>
+    <dimen name="default_column_spacing">8.0dip</dimen>
+    <dimen name="default_recyclerview_margin">8.0dip</dimen>
+    <item type="dimen" name="default_side_margin">@dimen/keyline_24</item>
+    <dimen name="desc_text_size">18.0sp</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="explore_category_width">240.0dip</dimen>
+    <dimen name="header_text_size">20.0sp</dimen>
+    <dimen name="height_home_content_info">65.0dip</dimen>
+    <item type="dimen" name="homepage_item_spacing">@dimen/keyline_16</item>
+    <item type="dimen" name="homepage_title_spacing">@dimen/keyline_16</item>
+    <dimen name="iap_price">24.0sp</dimen>
+    <item type="dimen" name="iap_track_aspect_ratio">0.55</item>
+    <dimen name="iap_track_side_margin">48.0dip</dimen>
+    <dimen name="large_side_margin">40.0dip</dimen>
+    <dimen name="line_height_l">32.0sp</dimen>
+    <dimen name="line_height_m">28.0sp</dimen>
+    <dimen name="line_height_s">24.0sp</dimen>
+    <dimen name="line_height_xl">36.0sp</dimen>
+    <dimen name="line_height_xs">20.0sp</dimen>
+    <dimen name="line_height_xxl">64.0sp</dimen>
+    <dimen name="list_badge_text_size">12.0sp</dimen>
+    <item type="dimen" name="list_item_bottom_spacing">@dimen/keyline_24</item>
+    <item type="dimen" name="mr_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">90.0%</item>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
+    <dimen name="profile_buttons_font_size">22.0sp</dimen>
+    <dimen name="profile_review_icon">180.0dip</dimen>
+    <dimen name="resource_width">224.0dip</dimen>
+    <item type="dimen" name="screen_start_spacing">@dimen/keyline_24</item>
+    <dimen name="scroll_dow_text_size">24.0sp</dimen>
+    <dimen name="scroll_item_width">297.0dip</dimen>
+    <dimen name="small_text_size">12.0sp</dimen>
+    <dimen name="soompi_list_height">100.0dip</dimen>
+    <dimen name="soompi_thumbnail_height">80.0dip</dimen>
+    <dimen name="soompi_thumbnail_width">80.0dip</dimen>
+    <dimen name="splash_bg_height">220.0dip</dimen>
+    <dimen name="splash_bg_width">373.0dip</dimen>
+    <dimen name="splash_logo_height">80.0dip</dimen>
+    <dimen name="splash_text_size">22.0sp</dimen>
+    <dimen name="subheader_text_size">16.0sp</dimen>
+    <dimen name="tag_text_size">14.0sp</dimen>
+    <dimen name="text_size_body">16.0sp</dimen>
+    <dimen name="text_size_explore_category">14.0sp</dimen>
+    <dimen name="text_size_explore_option">16.0sp</dimen>
+    <dimen name="text_size_header">18.0sp</dimen>
+    <dimen name="text_size_l">24.0sp</dimen>
+    <dimen name="text_size_m">18.0sp</dimen>
+    <dimen name="text_size_masthead_subtitle">16.0sp</dimen>
+    <dimen name="text_size_masthead_title">22.0sp</dimen>
+    <dimen name="text_size_profile_review_time">14.0sp</dimen>
+    <dimen name="text_size_s">16.0sp</dimen>
+    <dimen name="text_size_subheader">16.0sp</dimen>
+    <dimen name="text_size_subtitle">16.0sp</dimen>
+    <dimen name="text_size_tag">14.0sp</dimen>
+    <dimen name="text_size_title">18.0sp</dimen>
+    <dimen name="text_size_xl">30.0sp</dimen>
+    <dimen name="text_size_xs">14.0sp</dimen>
+    <dimen name="text_size_xxl">48.0sp</dimen>
+    <dimen name="text_size_xxs">12.0sp</dimen>
+    <dimen name="upsize_side_margin">32.0dip</dimen>
+</resources>

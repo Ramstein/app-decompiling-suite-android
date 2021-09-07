@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/badges_container" android:layout_width="wrap_content" android:layout_height="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_badge_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/orange_marker" android:background="@drawable/border_box_marker_pink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:text="@string/coming_soon" android:includeFontPadding="false" android:shadowColor="@color/shadow_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:fontFamily="sans-serif" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:layout_marginEnd="5.0dip" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/fan_channel_marker" android:background="#ff293a3e" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fan_channel" android:fontFamily="sans-serif" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+</LinearLayout>

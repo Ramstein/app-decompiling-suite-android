@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/srl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/pbLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <ViewStub android:id="@id/errorStub" android:layout="@layout/widget_placeholder" android:inflatedId="@id/errorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/replyContainer" android:background="@color/surface_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/btnAttachment" android:background="?selectableItemBackground" android:padding="@dimen/spacing_large" android:layout_width="48.0dip" android:layout_height="fill_parent" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_attachment" />
+        <EditText android:textAppearance="@style/TextAppearance.Viki.Plain.L" android:layout_gravity="center_vertical" android:id="@id/etMessage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/ticket_details_input_field_hint" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.M" android:textColor="@color/borderless_button_text_color" android:layout_gravity="center_vertical" android:id="@id/btnSend" android:background="?selectableItemBackground" android:padding="@dimen/spacing_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_details_chat_send_button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+.class final Lcom/viki/customercare/helpcenter/article/ViewArticleActivity$e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;->onCreate(Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/viki/customercare/helpcenter/article/ViewArticleActivity$e;->a:Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lcom/viki/customercare/helpcenter/article/ViewArticleActivity$e;->a:Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;
+
+    invoke-static {p1}, Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;->a(Lcom/viki/customercare/helpcenter/article/ViewArticleActivity;)V
+
+    return-void
+.end method

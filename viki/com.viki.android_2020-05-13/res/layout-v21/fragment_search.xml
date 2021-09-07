@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.arlib.floatingsearchview.FloatingSearchView android:id="@id/floating_search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:floatingSearch_searchHint="@string/search_hint_mobile" style="@style/FloatingSearchView" />
+    <RelativeLayout android:id="@id/searchContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeight" android:layout_marginTop="?actionBarSize" android:paddingStart="@dimen/default_side_margin" android:paddingEnd="@dimen/default_side_margin">
+        <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Subtitle" android:textSize="@dimen/text_size_title" android:textStyle="bold" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_result" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Title" android:textSize="10.0dip" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvFilterCount" android:background="@drawable/circle_accent" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" />
+            <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Title" android:gravity="center_vertical" android:id="@id/textview_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter" android:drawablePadding="@dimen/drawable_spacing" android:drawableStart="@drawable/ic_filter" android:fontFamily="sans-serif" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/empty_message" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.viki.android.customviews.AnimatedLinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+    <com.viki.android.customviews.EndlessRecyclerView android:id="@id/search_results_list" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_progressbar" android:layout_below="@id/searchContainer" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:indeterminateTint="@color/white" android:indeterminateTintMode="src_in" style="@style/progressBar" />
+    <ProgressBar android:id="@id/bottom_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:indeterminateTint="@color/white" android:indeterminateTintMode="src_in" style="@style/progressBar" />
+</RelativeLayout>

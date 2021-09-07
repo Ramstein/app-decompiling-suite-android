@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="continue_watching_shows_removed">
+        <item quantity="other">Shows rimossi</item>
+        <item quantity="one">Show rimossi</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">%d giorni</item>
+        <item quantity="one">Quotidiano</item>
+    </plurals>
+    <plurals name="day">
+        <item quantity="other">%d giorni</item>
+        <item quantity="one">1 giorno</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">giorni</item>
+        <item quantity="one">giorno</item>
+    </plurals>
+    <plurals name="episode">
+        <item quantity="other">%d episodi</item>
+        <item quantity="one">1 episodio</item>
+    </plurals>
+    <plurals name="followers">
+        <item quantity="other">%s seguaci</item>
+        <item quantity="one">%s seguace</item>
+    </plurals>
+    <plurals name="free_episodes">
+        <item quantity="other">Episodi gratuiti</item>
+        <item quantity="one">Episodio gratuito</item>
+    </plurals>
+    <plurals name="free_hour">
+        <item quantity="other">Guarda GRATIS per le prossime %d ore</item>
+        <item quantity="one">Guarda GRATIS per la prossima ora</item>
+    </plurals>
+    <plurals name="general_subscription_message_with_days">
+        <item quantity="other">Questo episodio è disponibile solo per gli abbonati a %1$s. Sarà disponibile per tutti tra %2$d giorni. Non puoi aspettare?</item>
+        <item quantity="one">Questo episodio è disponibile solo per gli abbonati a %1$s. Sarà disponibile per tutti tra 1 giorno. Non puoi aspettare?</item>
+    </plurals>
+    <plurals name="hour">
+        <item quantity="other">%d ore</item>
+        <item quantity="one">1 ora</item>
+    </plurals>
+    <plurals name="left_days">
+        <item quantity="other">%d giorni rimasti</item>
+        <item quantity="one">1 giorno rimasto</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d minuti</item>
+        <item quantity="one">1 minuto</item>
+    </plurals>
+    <plurals name="monthly">
+        <item quantity="other">%d mesi</item>
+        <item quantity="one">Mensile</item>
+    </plurals>
+    <plurals name="per_month">
+        <item quantity="other">ogni %d mese</item>
+        <item quantity="one">al mese</item>
+    </plurals>
+    <plurals name="per_week">
+        <item quantity="other">ogni %d settimane</item>
+        <item quantity="one">a settimana</item>
+    </plurals>
+    <plurals name="per_year">
+        <item quantity="other">ogni %d anni</item>
+        <item quantity="one">"all'anno"</item>
+    </plurals>
+    <plurals name="second">
+        <item quantity="other">%d secondi</item>
+        <item quantity="one">1 secondo</item>
+    </plurals>
+    <plurals name="shows">
+        <item quantity="other">%d show</item>
+        <item quantity="one">%d show</item>
+    </plurals>
+    <plurals name="trial_day">
+        <item quantity="other">Ottieni %d giorni gratis</item>
+        <item quantity="one">Ottieni un giorno gratis</item>
+    </plurals>
+    <plurals name="trial_day_left">
+        <item quantity="other">Prova gratuita: %d giorni rimasti</item>
+        <item quantity="one">Prova gratuita: un giorno rimasto</item>
+    </plurals>
+    <plurals name="trial_month">
+        <item quantity="other">Ottieni %d mesi gratis</item>
+        <item quantity="one">Ottieni un mese gratis</item>
+    </plurals>
+    <plurals name="trial_week">
+        <item quantity="other">Ottieni %d settimane gratis</item>
+        <item quantity="one">Ottieni una settimana gratis</item>
+    </plurals>
+    <plurals name="trial_year">
+        <item quantity="other">Ottieni %d anni gratis</item>
+        <item quantity="one">Ottieni un anno gratis</item>
+    </plurals>
+    <plurals name="video_behind_pass_day">
+        <item quantity="other">Questo episodio è disponibile solo per gli abbonati a %1$s. Sarà disponibile per tutti tra %2$d giorni. Non puoi aspettare?</item>
+        <item quantity="one">Questo episodio è disponibile solo per gli abbonati a %1$s. Sarà disponibile per tutti tra 1 giorno. Non puoi aspettare?</item>
+    </plurals>
+    <plurals name="video_for_vp_available">
+        <item quantity="other">Questo video è disponibile solo per gli abbonati al Pass Viki Standard. Sarà disponibile per tutti tra %d giorni. Non puoi aspettare?</item>
+        <item quantity="one">Questo video è disponibile solo per gli abbonati al Pass Viki Standard. Sarà disponibile per tutti tra 1 giorno. Non puoi aspettare?</item>
+    </plurals>
+    <plurals name="video_for_vp_plus">
+        <item quantity="other">Questo video è disponibile solo per gli abbonati al Pass Viki Plus. Sarà disponibile per tutti tra %d giorni. Non puoi aspettare?</item>
+        <item quantity="one">Questo video è disponibile solo per gli abbonati al Pass Viki Plus. Sarà disponibile per tutti tra 1 giorno. Non puoi aspettare?</item>
+    </plurals>
+    <plurals name="week">
+        <item quantity="other">%d settimane</item>
+        <item quantity="one">1 settimana</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">%d settimane</item>
+        <item quantity="one">Settimanale</item>
+    </plurals>
+    <plurals name="yearly">
+        <item quantity="other">%d anni</item>
+        <item quantity="one">Annuale</item>
+    </plurals>
+</resources>

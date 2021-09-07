@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/video_settings">
+        <SwitchPreference android:title="@string/enable_auto_play" android:key="@string/enable_auto_play_pref" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="@string/wifi_hd_only" android:key="@string/hd_on_wifi" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,707 @@
+{
+  "ad_priority_v5": {
+    "enabled": true,
+    "ad_video_timeout": -1,
+    "show_ads": {
+      "clip": false,
+      "news_clip": false,
+      "trailer": false
+    },
+    "ad_cue_points": [
+      [
+        0,
+        1
+      ],
+      [
+        540,
+        1
+      ],
+      [
+        1080,
+        1
+      ],
+      [
+        1620,
+        1
+      ],
+      [
+        2160,
+        1
+      ],
+      [
+        2700,
+        1
+      ],
+      [
+        3240,
+        1
+      ],
+      [
+        3780,
+        1
+      ],
+      [
+        4320,
+        1
+      ],
+      [
+        4860,
+        1
+      ],
+      [
+        5400,
+        1
+      ],
+      [
+        5940,
+        1
+      ],
+      [
+        6480,
+        1
+      ],
+      [
+        7020,
+        1
+      ],
+      [
+        7560,
+        1
+      ],
+      [
+        8100,
+        1
+      ],
+      [
+        8640,
+        1
+      ],
+      [
+        9180,
+        1
+      ],
+      [
+        9720,
+        1
+      ],
+      [
+        10260,
+        1
+      ],
+      [
+        10800,
+        1
+      ],
+      [
+        11340,
+        1
+      ],
+      [
+        11880,
+        1
+      ],
+      [
+        12420,
+        1
+      ],
+      [
+        12960,
+        1
+      ],
+      [
+        13500,
+        1
+      ],
+      [
+        14040,
+        1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "list": [
+      {
+        "provider": "google_ima_v3",
+        "ios_app_id": "/50449293/Video.Mobile/iOS",
+        "android_app_id": "/50449293/Video.Mobile/Android"
+      }
+    ]
+  },
+  "mobile_survey_v2": {
+    "enabled": false
+  },
+  "popular_search_v2": {
+    "enabled": true,
+    "list": [
+      {
+        "type": "popular_tv",
+        "titles": {
+          "en": "Popular Searches - TV shows",
+          "ja": "人気の検索 - TV番組",
+          "es": "Búsquedas Populares - Programas de TV",
+          "fr": "Recherches populaires - Émissions de télévision",
+          "zh": "热门搜寻 - 电视剧",
+          "zt": "熱門搜尋 - 電視劇",
+          "pt": "Buscas Populares - Programas de TV",
+          "ko": "인기 검색 - TV 쇼",
+          "de": "Beliebte Suchen - TV Shows",
+          "it": "Ricerche più diffuse - spettacoli televisivi"
+        },
+        "path": "/v4/series",
+        "params": {
+          "sort": "views_recent"
+        },
+        "action": "container"
+      },
+      {
+        "type": "people",
+        "titles": {
+          "en": "Popular Searches - Celebrities",
+          "ja": "人気の検索 - セレブ",
+          "es": "Búsquedas Populares - Celebridades",
+          "fr": "Recherches populaires - Célébrités",
+          "zh": "热门搜寻 - 名人",
+          "zt": "熱門搜尋 - 名人",
+          "pt": "Buscas Populares - Celebridades",
+          "ko": "인기 검색 - 연예인",
+          "de": "Beliebte Suchen - Prominente",
+          "it": "Ricerche più diffuse - Celebrità"
+        },
+        "path": "/v4/people/en",
+        "params": {
+          "sort": "views"
+        }
+      }
+    ]
+  },
+  "ad_settings": "21",
+  "supported_versions": {
+    "enabled": false
+  },
+  "quantcast": {
+    "enabled": false
+  },
+  "explore_countries": {
+    "list": {
+      "kr": {
+        "native": "한국",
+        "name": {
+          "en": "Korea",
+          "es": "Corea del Sur",
+          "fr": "Corée",
+          "ja": "韓国",
+          "zh": "韩国",
+          "zt": "韓國",
+          "pt": "Coreia",
+          "ko": "대한민국",
+          "de": "Korea",
+          "it": "Corea"
+        }
+      },
+      "cn": {
+        "native": "中国",
+        "name": {
+          "en": "China",
+          "es": "China",
+          "fr": "Chine",
+          "ja": "中国",
+          "zh": "中国",
+          "zt": "中國",
+          "pt": "China",
+          "ko": "중국",
+          "de": "China",
+          "it": "Cina"
+        }
+      },
+      "th": {
+        "native": "ราชอาณาจักรไทย",
+        "name": {
+          "en": "Thailand",
+          "es": "Tailandia",
+          "fr": "La Thaïlande",
+          "ja": "タイ",
+          "zh": "泰国",
+          "zt": "泰國",
+          "ko": "태국",
+          "pt": "Tailândia",
+          "de": "Thailand",
+          "it": "Tailandia"
+        }
+      },
+      "tw": {
+        "native": "台灣",
+        "name": {
+          "en": "Taiwan",
+          "es": "Taiwán",
+          "fr": "Taïwan",
+          "ja": "台湾",
+          "zh": "台湾",
+          "zt": "台灣",
+          "ko": "대만",
+          "pt": "Taiwan",
+          "de": "Taiwan",
+          "it": "Taiwan"
+        }
+      },
+      "jp": {
+        "native": "日本",
+        "name": {
+          "en": "Japan",
+          "es": "Japón",
+          "fr": "Japon",
+          "ja": "日本",
+          "zh": "日本",
+          "zt": "日本",
+          "ko": "일본",
+          "pt": "Japão",
+          "de": "Japan",
+          "it": "Giappone"
+        }
+      }
+    }
+  },
+  "explore_genres": {
+    "list": [
+      {
+        "id": "18g",
+        "type": "genre",
+        "genre_type": "film and tv",
+        "name": {
+          "en": "Romance",
+          "es": "Romance",
+          "fr": "Romance",
+          "ja": "ラブストーリー",
+          "zh": "爱情",
+          "zt": "愛情",
+          "ko": "로맨스",
+          "pt": "Romance",
+          "de": "Romantik",
+          "it": "Romanza"
+        }
+      },
+      {
+        "id": "23g",
+        "type": "genre",
+        "genre_type": "film and tv",
+        "name": {
+          "en": "Korean Drama",
+          "es": "Drama Coreano",
+          "fr": "Drame coréen",
+          "ja": "韓流ドラマ",
+          "zh": "韩剧",
+          "zt": "韓劇",
+          "ko": "한국 드라마",
+          "pt": "Drama Coreano",
+          "de": "Koreanisches Drama",
+          "it": "Dramma Coreano"
+        }
+      },
+      {
+        "id": "9g",
+        "type": "genre",
+        "genre_type": "film and tv",
+        "name": {
+          "en": "Drama",
+          "es": "Drama",
+          "fr": "Drame",
+          "ja": "ドラマ",
+          "zh": "剧情",
+          "zt": "劇情",
+          "ko": "드라마",
+          "pt": "Drama",
+          "de": "Drama",
+          "it": "Dramma"
+        }
+      },
+      {
+        "id": "6g",
+        "type": "genre",
+        "genre_type": "film and tv",
+        "name": {
+          "en": "Comedy",
+          "es": "Comedia",
+          "fr": "Comédie",
+          "ja": "コメディ",
+          "zh": "喜剧",
+          "zt": "喜劇",
+          "ko": "코미디",
+          "pt": "Comédia",
+          "de": "Komödie",
+          "it": "Commedia"
+        }
+      },
+      {
+        "id": "25g",
+        "type": "genre",
+        "genre_type": "film and tv",
+        "name": {
+          "en": "Costume & Period",
+          "es": "Dramas de época",
+          "fr": "Costume et époque",
+          "ja": "時代劇",
+          "zh": "古装",
+          "zt": "古裝",
+          "ko": "의상 & 시대",
+          "pt": "Figurino & Época",
+          "de": "Bijouterie und Period",
+          "it": "Costume & Periodo"
+        }
+      }
+    ]
+  },
+  "explore_subtitles": {
+    "list": [
+      {
+        "code": "en",
+        "direction": "ltr",
+        "native_name": "English",
+        "name": {
+          "en": "English",
+          "es": "Inglés",
+          "ja": "英語",
+          "fr": "Anglais",
+          "zh": "英语",
+          "zt": "英語",
+          "de": "Englisch",
+          "it": "Inglese"
+        }
+      },
+      {
+        "code": "es",
+        "direction": "ltr",
+        "native_name": "Español",
+        "name": {
+          "en": "Spanish",
+          "es": "Español",
+          "ja": "スペイン語",
+          "fr": "Espagnol",
+          "zh": "西班牙语",
+          "zt": "西班牙語",
+          "de": "Spanisch",
+          "it": "Spagnolo"
+        }
+      },
+      {
+        "code": "fr",
+        "direction": "ltr",
+        "native_name": "Français",
+        "name": {
+          "en": "French",
+          "es": "Francés",
+          "ja": "フランス語",
+          "fr": "Français",
+          "zh": "法语",
+          "zt": "法語",
+          "de": "Französisch",
+          "it": "Francese"
+        }
+      },
+      {
+        "code": "pt",
+        "direction": "ltr",
+        "native_name": "Português",
+        "name": {
+          "en": "Portuguese",
+          "es": "Portugués",
+          "ja": "ポルトガル語",
+          "fr": "Portugais",
+          "zh": "葡萄牙语",
+          "zt": "葡萄牙語",
+          "de": "Portugiesisch",
+          "it": "Portoghese"
+        }
+      },
+      {
+        "code": "ar",
+        "direction": "rtl",
+        "native_name": "العربية",
+        "name": {
+          "en": "Arabic",
+          "es": "Árabe",
+          "ja": "アラビア語",
+          "fr": "Arabe",
+          "zh": "阿拉伯语",
+          "zt": "阿拉伯語",
+          "de": "Arabisch",
+          "it": "Arabo"
+        }
+      }
+    ]
+  },
+  "explore_collection_languages":{
+    "list": [
+      {
+        "code": "en",
+        "direction": "ltr",
+        "native_name": "English",
+        "name": {"en":"English","es":"Inglés", "ja":"英語","fr": "Anglais","zh": "英语","de": "Englisch", "it": "Inglese"}
+      },
+      {
+        "code": "es",
+        "direction": "ltr",
+        "native_name": "Español",
+        "name": {"en":"Spanish","es":"Español", "ja":"スペイン語","fr": "Espagnol","zh": "西班牙语","de": "Spanisch", "it": "Spagnolo"}
+      },
+      {
+        "code": "fr",
+        "direction": "ltr",
+        "native_name": "Français",
+        "name": {"en":"French","es":"Francés", "ja":"フランス語","fr": "Français","zh": "法语","de": "Französisch", "it": "Francese"}
+      },
+      {
+        "code": "ja",
+        "direction": "ltr",
+        "native_name": "日本語",
+        "name": {"en": "Japanese", "ja": "日本語", "es": "Japonés", "fr": "Japonais", "zh": "日语", "de": "Japanisch", "it": "Giapponese"}
+      },
+      {
+        "code": "zh",
+        "direction": "ltr",
+        "native_name": "简体中文",
+        "name": {"en": "Chinese (Simplified)", "ja": "中国語（簡体字）", "es": "Chino Simplificado", "fr": "Chinois (Simplifié)", "zh": "简体中文", "de": "Chinesisch (Vereinfachtes)", "it": "Cinese (Semplificato)"}
+      },
+      {
+        "code": "de",
+        "direction": "ltr",
+        "native_name": "繁體中文",
+        "name": {"en": "Chinese (Traditional)", "ja": "中国語（繁体字）", "es": "Chino Tradicional", "fr": "Chinois (Traditionnel)", "zh": "繁体中文", "de": "Chinesische (Traditional)", "it": "Cinese (Tradizionale)"}
+      }
+    ]
+  },
+  "rakuten_id": {
+    "enabled": false
+  },
+  "watch_marker": {
+    "days_ago": 0
+  },
+  "surveymonkey": {
+    "cancel_subscription": {
+      "en": "9R6SVF5",
+      "es": "F2HFVK8",
+      "ja": "F237F5Q",
+      "fr": "D5FPKXB",
+      "zh": "F2ZQVP3",
+      "zt": "FC8V7GQ",
+      "pt": "F2XV3XZ",
+      "ko": "FCVN3QF",
+      "de": "LS7TZ7H",
+      "it": "LR8KDLZ"
+    }
+  },
+  "ad_free_resources": {
+    "resources": []
+  },
+  "default_quality_mapping": {
+    "HD": "720p",
+    "SD": "360p"
+  },
+  "account_consent":{
+    "enabled":true,
+    "checked":false,
+    "visible":true
+  },
+  "email_consent":{
+    "enabled":true,
+    "checked":false,
+    "visible_pages": [ "signup" ]
+  },
+  "chromecast": {
+    "enabled": true,
+    "viki_pass_required": true
+  },
+  "viki_pass_overlay_experiment": {
+    "display": true
+  },
+  "explore_secondary_navigation": {
+    "enabled": true,
+    "list": [
+      {
+        "id": "explore_tab",
+        "type": "container",
+        "titles": {
+          "en": "All",
+          "es": "Todos",
+          "fr": "Tous",
+          "ja": "全て",
+          "ko": "모두",
+          "pt": "Todos",
+          "zh": "全部",
+          "zt": "全部",
+          "de": "Alle",
+          "it": "Tutti"
+        },
+        "path": "/v4/containers",
+        "params": {
+          "sort": "views_recent",
+          "licensed": 1,
+          "per_page": 24
+        }
+      },
+      {
+        "id": "korean_tab",
+        "type": "container",
+        "titles": {
+          "en": "Korean",
+          "es": "Coreano",
+          "fr": "Coréen",
+          "ja": "韓国ドラマ",
+          "ko": "한국 드라마",
+          "pt": "Coreano",
+          "zh": "韩剧",
+          "zt": "韓劇",
+          "de": "Koreanisch",
+          "it": "Coreano"
+        },
+        "path": "/v4/containers",
+        "params": {
+          "origin_country": "kr",
+          "sort": "views_recent",
+          "licensed": 1,
+          "per_page": 24
+        }
+      },
+      {
+        "id": "chinese_tab",
+        "type": "container",
+        "titles": {
+          "en": "Chinese",
+          "es": "Chino",
+          "fr": "Chinois",
+          "ja": "中国ドラマ",
+          "ko": "중국 드라마",
+          "pt": "Chinês",
+          "zh": "大陆剧",
+          "zt": "大陸劇",
+          "de": "Chinesisch",
+          "it": "Cinese"
+        },
+        "path": "/v4/containers",
+        "params": {
+          "origin_country": "cn",
+          "sort": "views_recent",
+          "licensed": 1,
+          "per_page": 24
+        }
+      },
+      {
+        "id": "taiwanese_tab",
+        "type": "container",
+        "titles": {
+          "en": "Taiwanese",
+          "es": "Taiwanés",
+          "fr": "Taïwanais",
+          "ja": "台湾ドラマ",
+          "ko": "대만 드라마",
+          "pt": "Taiwan",
+          "zh": "台剧",
+          "zt": "台劇",
+          "de": "Taiwanese",
+          "it": "Taiwanese"
+        },
+        "path": "/v4/containers",
+        "params": {
+          "origin_country": "tw",
+          "sort": "views_recent",
+          "licensed": 1,
+          "per_page": 24
+        }
+      },
+      {
+        "id": "japanese_tab",
+        "type": "container",
+        "titles": {
+          "en": "Japanese",
+          "es": "Japonés",
+          "fr": "Japonais",
+          "ja": "日本ドラマ",
+          "ko": "일본 드라마",
+          "pt": "Japonês",
+          "zh": "日剧",
+          "zt": "日劇",
+          "de": "Japanisch",
+          "it": "Giapponese"
+        },
+        "path": "/v4/containers",
+        "params": {
+          "origin_country": "jp",
+          "sort": "views_recent",
+          "licensed": 1,
+          "per_page": 24
+        }
+      },
+      {
+        "id": "movies_tab",
+        "type": "container",
+        "titles": {
+          "en": "Movies",
+          "es": "Películas",
+          "fr": "Films",
+          "ja": "映画",
+          "ko": "영화",
+          "pt": "Filmes",
+          "zh": "电影",
+          "zt": "電影",
+          "de": "Filme",
+          "it": "Film"
+        },
+        "path": "/v4/containers",
+        "params": {
+          "sort": "views_recent",
+          "type": "film",
+          "licensed": 1,
+          "per_page": 24
+        }
+      },
+      {
+        "id": "collection_tab",
+        "type": "user_created_collection_list",
+        "titles": {
+          "en": "Collections",
+          "ja": "コレクション",
+          "es": "Colecciones",
+          "fr": "Collections",
+          "zh": "集锦",
+          "zt": "集錦",
+          "pt": "Coleções",
+          "ko": "컬렉션",
+          "de": "Sammlungen",
+          "it": "Collezioni"
+        },
+        "path": "/v4/user-lists",
+        "params": {
+          "list_type": "user",
+          "sort": "followers",
+          "per_page": 24,
+          "with_resources": "true",
+          "with_items": "true"
+        }
+      },
+      {
+        "id": "celebrity_tab",
+        "type": "celebrities",
+        "titles": {
+          "en": "Celebrities",
+          "ja": "著名人",
+          "es": "Celebridades",
+          "fr": "Vedettes",
+          "zh": "明星",
+          "zt": "明星",
+          "pt": "Celebridades",
+          "ko": "연예인",
+          "de": "Prominente",
+          "it": "Celebrità"
+        },
+        "path": "/v4/people",
+        "params": {
+          "sort": "views_recent",
+          "per_page": 24
+        }
+      }
+    ]
+  },
+  "mux" : {
+    "enabled": true
+  }
+}

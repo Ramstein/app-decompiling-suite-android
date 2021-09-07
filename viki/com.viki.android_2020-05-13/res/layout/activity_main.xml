@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:id="@id/castMiniController" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" class="com.viki.android.chromecast.fragment.NewMiniControllerFragment" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottomBar" android:background="@color/surface_2" android:layout_width="0.0dip" android:layout_height="@dimen/bottom_bar_height" app:itemIconTint="@color/home_tab_background" app:itemTextAppearanceActive="@style/TextAppearance.Viki.Emphasis.S" app:itemTextAppearanceInactive="@style/TextAppearance.Viki.Emphasis.S" app:itemTextColor="@color/home_tab_background" app:layout_constraintBottom_toTopOf="@id/castMiniController" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:menu="@menu/main_bottom_menu" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottomBar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" app:popupTheme="@style/VikiTheme">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llLogoContainer" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/logo_viki" />
+                    <Button android:id="@id/btnUpSell" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/keyline_12" style="@style/VikiTheme.Button.UpSell" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

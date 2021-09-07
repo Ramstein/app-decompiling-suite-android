@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="48.0dip" android:layout_height="48.0dip" style="@style/progressBar" />
+    <TextView android:textSize="@dimen/header_text_size" android:textColor="@color/contents_tertiary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/pending_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minHeight="?android:listPreferredItemHeight" android:drawablePadding="10.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+</LinearLayout>

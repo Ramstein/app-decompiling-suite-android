@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textview_comment" android:background="@color/surface_3" android:padding="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/join_the_discussion" android:maxLines="1" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" style="@style/VikiTheme.TextAppearance.Title" />
+    <com.viki.android.customviews.EndlessRecyclerView android:id="@id/rvComments" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

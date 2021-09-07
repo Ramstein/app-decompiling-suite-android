@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/imageHolder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.viki.android.customviews.FactorAspectRatioImageView android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:aspectRatio="@dimen/image_aspect_ratio" app:aspectRatioEnabled="true" app:dominantMeasurement="width" />
+        <ImageView android:layout_gravity="center" android:id="@id/mainImageOverlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/watch_later_icon_white" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Title" android:ellipsize="end" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half" android:maxLines="1" android:layout_below="@id/imageHolder" android:layout_centerHorizontal="true" android:fontFamily="sans-serif" />
+    <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Subtitle" android:ellipsize="end" android:id="@id/textview_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="4.0dip" android:layout_below="@id/textview_title" />
+</RelativeLayout>

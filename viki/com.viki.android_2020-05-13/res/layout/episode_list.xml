@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_vikipass" android:paddingBottom="@dimen/keyline_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <GridView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/keyline_8" android:verticalSpacing="@dimen/keyline_16" android:paddingStart="@dimen/keyline_16" android:paddingEnd="@dimen/keyline_16" />
+</LinearLayout>

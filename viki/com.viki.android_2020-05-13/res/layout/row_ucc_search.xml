@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" app:cardCornerRadius="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin">
+            <ImageView android:gravity="center_vertical" android:id="@id/imageview_add" android:padding="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_add" />
+            <ImageView android:id="@id/imageview" android:layout_width="@dimen/ucc_resource_width" android:layout_height="@dimen/ucc_resource_height" android:scaleType="centerCrop" android:layout_marginStart="@dimen/default_margin" />
+            <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Title" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" android:layout_toStartOf="@id/imageview_add" android:layout_toEndOf="@id/imageview" />
+            <TextView android:textAppearance="@style/VikiTheme.TextAppearance.Tag" android:id="@id/textview_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textview_title" android:textAllCaps="true" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" android:layout_toStartOf="@id/imageview_add" android:layout_toEndOf="@id/imageview" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="@dimen/header_text_size" android:gravity="center_horizontal" android:id="@id/textview_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="sans-serif-light" />
+</RelativeLayout>

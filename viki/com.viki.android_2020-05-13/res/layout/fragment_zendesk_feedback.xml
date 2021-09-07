@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sony_desc_padding" android:paddingEnd="@dimen/sony_desc_padding" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_extra_large" android:hint="@string/spinner_category_label" />
+        <Spinner android:id="@id/spinner_category" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_tertiary" android:id="@id/label_vikipass_issue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/viki_pass_issue_title" />
+        <Spinner android:id="@id/spinner_vikipass_issue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/zendesk_subject_field_input_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:hint="@string/subject" app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/zendesk_subject_field_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="50" android:inputType="textCapSentences" android:nextFocusForward="@id/zendesk_field1_edittext" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/zendesk_content_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/zendesk_field1_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/description_of_issue" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:textAppearance="@style/TextAppearance.Viki.Plain.L" android:id="@id/zendesk_field1_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/zendesk_email_field_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/email" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/zendesk_email_field_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress|textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_tertiary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/zendesk_attachment_label" android:singleLine="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/zendesk_attachment_recyclerview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <RelativeLayout android:id="@id/zendesk_attachment_container" android:background="@drawable/gray_dot_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <ImageView android:id="@id/take_imageview" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/attachment_take" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zendesk_attachment_format" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/take_imageview" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/retry_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_red" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/attachment_upload_error_retry" android:layout_weight="1.0" />
+                <ImageView android:id="@id/retry_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/retry_alert" />
+            </LinearLayout>
+            <Button android:id="@id/button_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="@dimen/spacing_large" android:text="@string/feedback_submit_button" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="channel_left_weight">68</integer>
+    <integer name="channel_right_weight">32</integer>
+    <integer name="columns">5</integer>
+    <integer name="list_num_columns_profile">3</integer>
+    <integer name="profile_collection_columns">2</integer>
+    <integer name="profile_columns">3</integer>
+    <integer name="resource_list_entry_count">5</integer>
+    <integer name="resource_list_entry_count_lowram">5</integer>
+    <integer name="search_list_entry_count">15</integer>
+    <integer name="search_list_entry_count_lowram">10</integer>
+</resources>

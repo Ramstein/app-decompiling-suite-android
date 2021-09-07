@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/nsv" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/profileInfoContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/infoContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/profile_settings" />
+        <View android:id="@id/divider" android:background="@color/contents_disabled" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/profile_info" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

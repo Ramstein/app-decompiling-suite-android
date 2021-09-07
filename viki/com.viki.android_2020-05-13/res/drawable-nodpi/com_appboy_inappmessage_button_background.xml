@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/com_appboy_inappmessage_button_bg_light" />
+    <corners android:radius="@dimen/com_appboy_in_app_message_button_corner_radius" />
+</shape>

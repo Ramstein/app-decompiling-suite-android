@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swiperefresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/default_recyclerview_margin" android:paddingEnd="@dimen/default_recyclerview_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/progressBar" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/empty_message" />
+        <com.viki.android.customviews.EndlessRecyclerView android:id="@id/recyclerview" android:paddingTop="@dimen/default_side_margin" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_progressbar" android:paddingStart="@dimen/default_recyclerview_margin" android:paddingEnd="@dimen/default_recyclerview_margin" />
+        <ProgressBar android:id="@id/bottom_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/progressBar" />
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="continue_watching_shows_removed">
+        <item quantity="other">Shows removed</item>
+        <item quantity="one">Show removed</item>
+    </plurals>
+    <plurals name="daily">
+        <item quantity="other">%d days</item>
+        <item quantity="one">Daily</item>
+    </plurals>
+    <plurals name="day">
+        <item quantity="other">%d days</item>
+        <item quantity="zero">%d days</item>
+        <item quantity="one">1 day</item>
+        <item quantity="many">%d days</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">days</item>
+        <item quantity="zero">days</item>
+        <item quantity="one">day</item>
+        <item quantity="many">days</item>
+    </plurals>
+    <plurals name="episode">
+        <item quantity="other">%d Episodes</item>
+        <item quantity="zero">Coming Soon</item>
+        <item quantity="one">1 Episode</item>
+        <item quantity="many">%d Episodes</item>
+    </plurals>
+    <plurals name="followers">
+        <item quantity="other">%s followers</item>
+        <item quantity="zero">0 followers</item>
+        <item quantity="one">%s follower</item>
+        <item quantity="many">%s followers</item>
+    </plurals>
+    <plurals name="free_episodes">
+        <item quantity="other">Free Episodes</item>
+        <item quantity="one">Free Episode</item>
+        <item quantity="many">Free Episodes</item>
+    </plurals>
+    <plurals name="free_hour">
+        <item quantity="other">Watch FREE for the next %d hours</item>
+        <item quantity="one">Watch FREE for the next 1 hour</item>
+        <item quantity="many">Watch FREE for the next %d hours</item>
+    </plurals>
+    <plurals name="general_subscription_message_with_days">
+        <item quantity="other">"This episode is available only for %1$s subscribers. It will be available to everyone in %2$d days. Can't wait?"</item>
+        <item quantity="one">"This episode is available only for %1$s subscribers. It will be available to everyone in 1 day. Can't wait?"</item>
+        <item quantity="many">"This episode is available only for %1$s subscribers. It will be available to everyone in %2$d days. Can't wait?"</item>
+    </plurals>
+    <plurals name="hour">
+        <item quantity="other">%d hours</item>
+        <item quantity="zero">%d hours</item>
+        <item quantity="one">1 hour</item>
+        <item quantity="many">%d hours</item>
+    </plurals>
+    <plurals name="left_days">
+        <item quantity="other">%d days left</item>
+        <item quantity="one">1 day left</item>
+        <item quantity="many">%d days left</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="other">%d minutes</item>
+        <item quantity="zero">%d minutes</item>
+        <item quantity="one">1 minute</item>
+        <item quantity="many">%d minutes</item>
+    </plurals>
+    <plurals name="monthly">
+        <item quantity="other">%d months</item>
+        <item quantity="one">Monthly</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="per_month">
+        <item quantity="other">per %d months</item>
+        <item quantity="one">per month</item>
+    </plurals>
+    <plurals name="per_week">
+        <item quantity="other">per %d weeks</item>
+        <item quantity="one">per week</item>
+    </plurals>
+    <plurals name="per_year">
+        <item quantity="other">per %d years</item>
+        <item quantity="one">per year</item>
+    </plurals>
+    <plurals name="second">
+        <item quantity="other">%d seconds</item>
+        <item quantity="zero">%d seconds</item>
+        <item quantity="one">1 second</item>
+        <item quantity="many">%d seconds</item>
+    </plurals>
+    <plurals name="shows">
+        <item quantity="other">%d Shows</item>
+        <item quantity="zero">0 Shows</item>
+        <item quantity="one">%d Show</item>
+        <item quantity="many">%d Shows</item>
+    </plurals>
+    <plurals name="trial_day">
+        <item quantity="other">Get %d days free</item>
+        <item quantity="one">Get one day free</item>
+    </plurals>
+    <plurals name="trial_day_left">
+        <item quantity="other">Free Trial: %d days left</item>
+        <item quantity="one">Free Trial: one day left</item>
+    </plurals>
+    <plurals name="trial_month">
+        <item quantity="other">Get %d months free</item>
+        <item quantity="one">Get one month free</item>
+    </plurals>
+    <plurals name="trial_week">
+        <item quantity="other">Get %d weeks free</item>
+        <item quantity="one">Get one week free</item>
+    </plurals>
+    <plurals name="trial_year">
+        <item quantity="other">Get %d years free</item>
+        <item quantity="one">Get one year free</item>
+    </plurals>
+    <plurals name="video_behind_pass_day">
+        <item quantity="other">"This episode is available only for %1$s subscribers. It will be available to everyone in %2$d days. Can't wait?"</item>
+        <item quantity="one">"This episode is available only for %1$s subscribers. It will be available to everyone in 1 day. Can't wait?"</item>
+        <item quantity="many">"This episode is available only for %1$s subscribers. It will be available to everyone in %2$d days. Can't wait?"</item>
+    </plurals>
+    <plurals name="video_for_vp_available">
+        <item quantity="other">"This episode is available only for Viki Pass Standard subscribers. It will be available to everyone in %d days. Can't wait?"</item>
+        <item quantity="one">"This episode is available only for Viki Pass Standard subscribers. It will be available to everyone in 1 day. Can't wait?"</item>
+        <item quantity="many">"This episode is available only for Viki Pass Standard subscribers. It will be available to everyone in %d days. Can't wait?"</item>
+    </plurals>
+    <plurals name="video_for_vp_plus">
+        <item quantity="other">"This episode is available only for Viki Pass Plus subscribers. It will be available to everyone in %d days. Can't wait?"</item>
+        <item quantity="one">"This episode is available only for Viki Pass Plus subscribers. It will be available to everyone in 1 day. Can't wait?"</item>
+        <item quantity="many">"This episode is available only for Viki Pass Plus subscribers. It will be available to everyone in %d days. Can't wait?"</item>
+    </plurals>
+    <plurals name="week">
+        <item quantity="other">%d weeks</item>
+        <item quantity="zero">%d weeks</item>
+        <item quantity="one">1 week</item>
+        <item quantity="many">%d weeks</item>
+    </plurals>
+    <plurals name="weekly">
+        <item quantity="other">%d weeks</item>
+        <item quantity="one">Weekly</item>
+    </plurals>
+    <plurals name="yearly">
+        <item quantity="other">%d years</item>
+        <item quantity="one">Annual</item>
+    </plurals>
+</resources>

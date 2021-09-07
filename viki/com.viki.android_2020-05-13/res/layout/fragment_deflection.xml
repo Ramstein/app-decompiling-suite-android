@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Viki.Plain.S" android:textColor="@color/contents_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_large" android:text="@string/deflection_message" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/tilIssue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/deflection_issue_hint">
+            <com.google.android.material.textfield.TextInputEditText android:textAppearance="@style/TextAppearance.Viki.Plain.L" android:id="@id/tietIssue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_extra_small" android:inputType="textMultiLine" android:layout_marginStart="@dimen/spacing_large" android:layout_marginEnd="@dimen/spacing_large" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:paddingBottom="@dimen/list_bottom_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/btnProceed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_marginRight="@dimen/spacing_large" android:layout_marginBottom="@dimen/spacing_extra_large" android:text="@string/deflection_screen_button_proceed" android:layout_marginStart="@dimen/spacing_large" android:layout_marginEnd="@dimen/spacing_large" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
